@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>JSP ÀÔ¹®</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JSP ìž…ë¬¸</title>
 </head>
 <body>
-<h2>JSP ÀÔ¹®</h2>
+<h2>JSP ìž…ë¬¸</h2>
 <hr/>
-<!-- Expression:Ç¥Çö½Ä - ÀÚ¹ÙÀÇ º¯¼ö¸¦ À¥ÆäÀÌÁö·Î Ãâ·Â -->
-<%="Ã³À½À¸·Î ÀÛ¼ºÇÏ´Â JSP ÆäÀÌÁö" %>
+<!-- Expression:í‘œí˜„ì‹ - ìžë°”ì˜ ë³€ìˆ˜ë¥¼ ì›¹íŽ˜ì´ì§€ë¡œ ì¶œë ¥ -->
+<%="ì²˜ìŒìœ¼ë¡œ ìž‘ì„±í•˜ëŠ” JSP íŽ˜ì´ì§€" %>
 </body>
 </html>

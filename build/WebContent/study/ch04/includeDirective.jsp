@@ -1,16 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>include µğ·ºÆ¼ºê ¿¬½À</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>include ë””ë ‰í‹°ë¸Œ ì—°ìŠµ</title>
 </head>
 <body>
-<h2>include µğ·ºÆ¼ºê ¿¬½À</h2>
+<h2>include ë””ë ‰í‹°ë¸Œ ì—°ìŠµ</h2>
 <% String name = "KIM"; %>
 <%@ include file = "top.jsp" %>
-Æ÷ÇÔÇÏ´Â ÆäÀÌÁö includeDirective.jspÀÇ ³»¿ëÀÔ´Ï´Ù.
+í¬í•¨í•˜ëŠ” í˜ì´ì§€ includeDirective.jspì˜ ë‚´ìš©ì…ë‹ˆë‹¤.
 <%@ include file = "bottom.jsp" %>
 </body>
 </html>

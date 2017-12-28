@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-<b>À¯ÁøÀÌÀÇ À¥ÆäÀÌÁö¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù<b/></br>
-<h1>±¸¶ó</h1></br>
-<h2>¸Þ·Õ</h2></br>
+<b>ìœ ì§„ì´ì˜ ì›¹íŽ˜ì´ì§€ì— ì˜¤ì‹ ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤<b/></br>
+<h1>êµ¬ë¼</h1></br>
+<h2>ë©”ë¡±</h2></br>
 <hr>
-<h3>±èÅÂÁ¤¹Ùº¸</h3></br>
-<h4>¸ÛÃ»ÀÌ</h4></br>
-<h5>ÀÌ°ÍÀº html ¿¬½À</h5></br>
+<h3>ê¹€íƒœì •ë°”ë³´</h3></br>
+<h4>ë©ì²­ì´</h4></br>
+<h5>ì´ê²ƒì€ html ì—°ìŠµ</h5></br>
 <h6>hi</h6></br>
 </body>
 </html>
