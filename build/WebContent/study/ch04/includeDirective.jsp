@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>JSP 입문</title>
+<title>include 디렉티브 연습</title>
 </head>
 <body>
-<h2>JSP 입문</h2>
-<hr/>
-<!-- Expression:표현식 - 자바의 변수를 웹페이지로 출력 -->
-<%="처음으로 작성하는 JSP 페이지" %>
+<h2>include 디렉티브 연습</h2>
+<% String name = "KIM"; %>
+<%@ include file = "top.jsp" %>
+포함하는 페이지 includeDirective.jsp의 내용입니다.
+<%@ include file = "bottom.jsp" %>
 </body>
 </html>

@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>JSP 입문</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h2>JSP 입문</h2>
-<hr/>
-<!-- Expression:표현식 - 자바의 변수를 웹페이지로 출력 -->
-<%="처음으로 작성하는 JSP 페이지" %>
+<%
+String name = "박유진";
+int age = 21;
+%>
+나이 : <%=age %><br>
+이름 : <%=name %><br>
 </body>
 </html>

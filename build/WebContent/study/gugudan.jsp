@@ -4,12 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>JSP 입문</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h2>JSP 입문</h2>
-<hr/>
-<!-- Expression:표현식 - 자바의 변수를 웹페이지로 출력 -->
-<%="처음으로 작성하는 JSP 페이지" %>
+<!-- 스크립트릿이라고 한다. -->
+<%
+for(int i=1;i<=9;i++){
+	for(int j=1;j<=9;j++){
+		out.println(i + "*" + j + " = " + i*j+"<br>");
+	}
+}
+
+%>
+
 </body>
 </html>

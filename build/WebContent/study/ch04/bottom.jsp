@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>JSP 입문</title>
+<title>bottom.jsp</title>
 </head>
 <body>
-<h2>JSP 입문</h2>
-<hr/>
-<!-- Expression:표현식 - 자바의 변수를 웹페이지로 출력 -->
-<%="처음으로 작성하는 JSP 페이지" %>
+<hr>
+bottom.jsp입니다.<p>
+작성자는 <b><%=name %></b>
 </body>
 </html>
