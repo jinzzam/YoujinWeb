@@ -20,11 +20,11 @@
 Connection conn = null;
 
 try{
-    String jdbcUrl = "jdbc:mysql://localhost:3306/mydb";
-    String dbId = "root";
+    String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
+    String dbId = "system";
     String dbPass = "pass";
 
-    Class.forName("com.mysql.jdbc.Driver");
+    Class.forName("oracle.jdbc.driver.OracleDriver");
     conn = DriverManager.getConnection(jdbcUrl,dbId,dbPass);
     out.println("제대로 연결되었습니다.<br>");
     String sql ="select * from member";
