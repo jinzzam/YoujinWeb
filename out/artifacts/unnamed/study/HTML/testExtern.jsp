@@ -1,4 +1,6 @@
-<%--
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.PreparedStatement" %><%--
   Created by IntelliJ IDEA.
   User: jin
   Date: 2018-01-05
@@ -21,5 +23,31 @@
 <%=lastName%><br>
 <%=email%><br>
 <%=pass%><br>
+
+<%
+    Connection conn = null;
+
+    try{
+        String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
+        String dbId = "system";
+        String dbPass = "pass";
+
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+        conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass);
+        out.println("제대로 연결되었습니다.<br>");
+        String sql = "insert into wap (firstName, lastName, email, password)" +
+                "values (?, ?, ?, ?)";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, firstName);
+        pstmt.setString(2, lastName);
+        pstmt.setString(3, email);
+        pstmt.setString(4, pass);
+
+        pstmt.executeUpdate();
+        pstmt.close();
+    } catch(Exception e){
+        e.printStackTrace();
+    }
+%>
 </body>
 </html>
