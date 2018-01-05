@@ -89,7 +89,7 @@
 
                 <p class="forgot"><a href="#">Forgot Password?</a></p>
 
-                <button class="button button-block"/>
+                <button type="submit" class="button button-block"/>
                 Log In</button>
 
             </form>

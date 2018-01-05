@@ -39,11 +39,11 @@
 
         ResultSet rs = pstmt.executeQuery();
         while(rs.next()) {
+            out.println("hi");
             out.println(rs.getString("firstName") + "<br>");
             out.println(rs.getString("lastName") + "<br>");
             out.println(rs.getString("email") + "<br>");
-            out.println(rs.getString("pass") + "<br>");
-            out.println("hi");
+            out.println(rs.getString("password") + "<br>");
         }
     } catch (Exception e){
         e.printStackTrace();

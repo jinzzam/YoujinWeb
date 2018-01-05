@@ -77,19 +77,19 @@
                     <label>
                         Email Address<span class="req">*</span>
                     </label>
-                    <input type="email" required autocomplete="off" name = "email"/>
+                    <input type="email" required autocomplete="off" name = "email2"/>
                 </div>
 
                 <div class="field-wrap">
                     <label>
                         Password<span class="req">*</span>
                     </label>
-                    <input type="password" required autocomplete="off" name = "password"/>
+                    <input type="password" required autocomplete="off" name = "pass2"/>
                 </div>
 
                 <p class="forgot"><a href="#">Forgot Password?</a></p>
 
-                <button class="button button-block"/>
+                <button type="submit" class="button button-block"/>
                 Log In</button>
 
             </form>

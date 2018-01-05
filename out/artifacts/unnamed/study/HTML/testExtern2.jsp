@@ -1,4 +1,7 @@
-<%--
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="java.sql.ResultSet" %><%--
   Created by IntelliJ IDEA.
   User: jin
   Date: 2018-01-05
@@ -12,18 +15,40 @@
 </head>
 <body>
 로그인 성공!<br>
+
 <%
-//    String firstname = request.getParameter("firstName");
-//    String lastname = request.getParameter("lastName");
-    String email = request.getParameter("email");
-    String pass = request.getParameter("pass");
+    String email = request.getParameter("email2");
+    String pass = request.getParameter("pass2");
 %>
+<%
+    Connection conn = null;
 
-<%--<%=firstname%><br>--%>
-<%--<%=lastname%><br>--%>
-<%=email%><br>
-<%=pass%><br>
+    try{
+        String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
+        String dbId = "system";
+        String dbPass = "pass";
 
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+        conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass);
+        out.println("제대로 연결되었습니다.<br>");
+
+        String sql ="select * from wap where EMAIL = ? and PASSWORD = ?";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, email);
+        pstmt.setString(2, pass);
+
+        ResultSet rs = pstmt.executeQuery();
+        while(rs.next()) {
+            out.println("hi");
+            out.println(rs.getString("firstName") + "<br>");
+            out.println(rs.getString("lastName") + "<br>");
+            out.println(rs.getString("email") + "<br>");
+            out.println(rs.getString("password") + "<br>");
+        }
+    } catch (Exception e){
+        e.printStackTrace();
+    }
+%>
 
 
 </body>
