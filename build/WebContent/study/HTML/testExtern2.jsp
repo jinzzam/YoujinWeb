@@ -43,6 +43,7 @@
             out.println(rs.getString("lastName") + "<br>");
             out.println(rs.getString("email") + "<br>");
             out.println(rs.getString("pass") + "<br>");
+            out.println("hi");
         }
     } catch (Exception e){
         e.printStackTrace();
