@@ -17,8 +17,8 @@
 로그인 성공!<br>
 
 <%
-    String email = request.getParameter("email");
-    String pass = request.getParameter("pass");
+    String email = request.getParameter("email2");
+    String pass = request.getParameter("pass2");
 %>
 <%
     Connection conn = null;
@@ -32,7 +32,7 @@
         conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass);
         out.println("제대로 연결되었습니다.<br>");
 
-        String sql ="select * from wap where EMAIL = ? and PASSWORD = ?;";
+        String sql ="select * from wap where EMAIL = ? and PASSWORD = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, email);
         pstmt.setString(2, pass);
