@@ -11,15 +11,38 @@
     <title>css</title>
     <style>
         /*css 코드를 설명하기 위한 주석 다는 방법이다.*/
-        h3.type{
+        h1 {
+            text-align: center;
+        }
+
+        h3.type {
             background-color: yellow;
             border: 2px solid red;
         }
-        body em{color:red;}
-        body > h3{color:blue;}
-        a:link {color:blue;} /*아직 방문되지 않은 링크의 색상*/
-        a:visited {color:green;} /*방문된 링크의 색상*/
-        a:hover {color:green;} /*사용자가 링크 위에 있을 때*/
+
+        body em {
+            color: red;
+        }
+
+        body > h3 {
+            color: blue;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        /*아직 방문되지 않은 링크의 색상*/
+        a:visited {
+            color: green;
+        }
+
+        /*방문된 링크의 색상*/
+        a:hover {
+            color: green;
+        }
+
+        /*사용자가 링크 위에 있을 때*/
     </style>
 </head>
 <body>
