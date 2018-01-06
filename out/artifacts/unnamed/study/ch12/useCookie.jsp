@@ -15,14 +15,13 @@
 <%
     Cookie[] cookies = request.getCookies();
 
-    if(cookies!=null){
+    if (cookies != null) {
 
-        for(int i=0;i<cookies.length;i++){
-            out.println(cookies[i].getName());
-            if(cookies[i].getName().equals("id")){
-                %>
-                쿠키의 이름은 "<%=cookies[i].getName()%>"이고
-                쿠키의 값은 "<%=cookies[i].getValue()%>"입니다.
+        for (int i = 0; i < cookies.length; i++) {
+            if (cookies[i].getName().equals("id")) {
+%>
+쿠키의 이름은 "<%=cookies[i].getName()%>"이고
+쿠키의 값은 "<%=cookies[i].getValue()%>"입니다.
 <%
             }
         }
